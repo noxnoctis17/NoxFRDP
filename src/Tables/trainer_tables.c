@@ -7,23 +7,23 @@
 #include "../../include/easy_text.h"
 #include "../../include/global.h"
 
-const struct TrainerMonNoItemDefaultMoves sParty_PicMartha[] = {
-    {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_VICTREEBEL,
-    },
-    {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_TORKOAL,
-    },
-    {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_VILEPLUME,
-    },
-};
+// const struct TrainerMonNoItemDefaultMoves sParty_PicMartha[] = {
+//     {
+//         .iv = 0,
+//         .lvl = 5,
+//         .species = SPECIES_VICTREEBEL,
+//     },
+//     {
+//         .iv = 0,
+//         .lvl = 5,
+//         .species = SPECIES_TORKOAL,
+//     },
+//     {
+//         .iv = 0,
+//         .lvl = 5,
+//         .species = SPECIES_VILEPLUME,
+//     },
+// };
 
 const struct TrainerMonNoItemDefaultMoves sParty_RivalLabFire[] = {
     {
@@ -58,18 +58,18 @@ const struct Trainer gTrainers[] = {
         .trainerName = NO_NAME,
     },
 
-    [TRAINER_PICNICKER_MARTHA] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_PICNICKER,
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PICNICKER,
-        .trainerName = { _M, _a, _r, _t, _h, _a, _END },
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_DOUBLE_BATTLE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_UNKNOWN | AI_SCRIPT_CHECK_GOOD_MOVE,
-        .partySize = NELEMS( sParty_PicMartha ),
-        .party = { .NoItemDefaultMoves = sParty_PicMartha }
-    },
+    // [TRAINER_PICNICKER_MARTHA] = {
+    //     .partyFlags = 0,
+    //     .trainerClass = CLASS_PICNICKER,
+    //     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    //     .trainerPic = TRAINER_PIC_PICNICKER,
+    //     .trainerName = { _M, _a, _r, _t, _h, _a, _END },
+    //     .items = {},
+    //     .doubleBattle = TRUE,
+    //     .aiFlags = AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_DOUBLE_BATTLE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_UNKNOWN | AI_SCRIPT_CHECK_GOOD_MOVE,
+    //     .partySize = NELEMS( sParty_PicMartha ),
+    //     .party = { .NoItemDefaultMoves = sParty_PicMartha }
+    // },
 
     [TRAINER_RIVAL_OAKS_LAB_CHARMANDER] = {
         .partyFlags = 0,
