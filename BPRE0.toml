@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6'''
-FreeSpaceSearch = '''35CF80'''
+FreeSpaceSearch = '''35D700'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = True
@@ -7220,8 +7220,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/9/maps/6/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank9.Vermilion City.9-6'''
+Image = '''data.maps.banks/1/maps/82/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank1.Rock Tunnel.1-82'''
 
 #################################
 [[TableGroup]]

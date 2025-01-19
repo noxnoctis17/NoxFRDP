@@ -58,7 +58,7 @@ static void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies);
 
 const u16 LevelCaps[] = 
 {
-    18, //Cap Before Badge 1
+    20, //Cap Before Badge 1
     30, //Cap Before Badge 2
     40, //Cap Before Badge 3
     50, //Cap Before Badge 4
