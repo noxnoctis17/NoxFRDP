@@ -3,33 +3,78 @@
 #ifdef SCROLLING_MULTICHOICE
 
 #org @sExampleText_1
-Example 1
+Hardy, neutral
 
 #org @sExampleText_2
-Example 2
+Lonely, +Atk -Def
 
 #org @sExampleText_3
-Example 3
+Brave, +Atk -Spe
 
 #org @sExampleText_4
-Example 4
+Adamant, +Atk -SpAtk
 
 #org @sExampleText_5
-Example 5
+Naughty, +Atk -SpDef
 
 #org @sExampleText_6
-Example 6
+Bold, +Def -Atk
 
 #org @sExampleText_7
-Example 7
+Docile, neutral
 
 #org @sExampleText_8
-Example 8
+Relaxed, +Def -Spe
 
 #org @sExampleText_9
-Example 9
+Impish, +Def -SpAtk
 
 #org @sExampleText_10
-Example 10
+Lax, +Def -SpDef
+
+#org @sExampleText_11
+Timid, +Spe -Atk
+
+#org @sExampleText_12
+Hasty, +Spe -Def
+
+#org @sExampleText_13
+Serious, neutral
+
+#org @sExampleText_14
+Jolly, +Spe -SpAtk
+
+#org @sExampleText_15
+Naive, +Spe -SpDef
+
+#org @sExampleText_16
+Modest, +SpAtk -Atk
+
+#org @sExampleText_17
+Mild, +SpAtk -Def
+
+#org @sExampleText_18
+Quiet, +SpAtk -Spe
+
+#org @sExampleText_19
+Bashful, neutral
+
+#org @sExampleText_20
+Rash, +SpAtk -SpDef
+
+#org @sExampleText_21
+Calm, +SpDef -Atk
+
+#org @sExampleText_22
+Gentle, +SpDef -Def
+
+#org @sExampleText_23
+Sassy, +SpDef -Spe
+
+#org @sExampleText_24
+Careful, +SpDef -SpAtk
+
+#org @sExampleText_25
+Quirky, neutral
 
 #endif

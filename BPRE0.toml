@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6'''
-FreeSpaceSearch = '''35D700'''
+FreeSpaceSearch = '''35DB80'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = True
@@ -7220,8 +7220,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/1/maps/82/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank1.Rock Tunnel.1-82'''
+Image = '''data.maps.banks/6/maps/5/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank6.Pewter City.6-5'''
 
 #################################
 [[TableGroup]]

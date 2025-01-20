@@ -143,7 +143,7 @@ static u8 ChooseWildMonLevel(const struct WildPokemon* wildPokemon)
 		}
 	}
 
-	return min + rand;
+	return min + rand - 5;
 }
 
 #define MAP_ALTERING_CAVE ((1 << 8) | 122)
