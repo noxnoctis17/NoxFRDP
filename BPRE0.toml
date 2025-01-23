@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6'''
-FreeSpaceSearch = '''35DB80'''
+FreeSpaceSearch = '''35EF80'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = True
@@ -3246,6 +3246,24 @@ Address = 0x35BBC0
 Format = ''''''
 DefaultHash = '''15316515'''
 
+[[NamedAnchors]]
+Name = '''data.abilities.typeswaps'''
+Address = 0x35E100
+Format = '''[ability.data.abilities.names original.data.pokemon.type.names change.data.pokemon.type.names scale.]!FFFF0000'''
+DefaultHash = '''DB0C4D34'''
+
+[[NamedAnchors]]
+Name = '''thumb.divide'''
+Address = 0x1E4018
+Format = ''''''
+DefaultHash = '''15316515'''
+
+[[NamedAnchors]]
+Name = '''thumb.abilities.typeswaps'''
+Address = 0x35E180
+Format = ''''''
+DefaultHash = '''15316515'''
+
 #################################
 #################################
 [[MatchedWords]]
@@ -3879,6 +3897,10 @@ Offset = 0x000001
 
 [[OffsetPointer]]
 Address = 0x054B54
+Offset = 0x000001
+
+[[OffsetPointer]]
+Address = 0x145FE34
 Offset = 0x000001
 
 #################################
@@ -7220,8 +7242,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/6/maps/5/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank6.Pewter City.6-5'''
+Image = '''data.maps.banks/3/maps/28/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank3.Route 10.3-28'''
 
 #################################
 [[TableGroup]]
