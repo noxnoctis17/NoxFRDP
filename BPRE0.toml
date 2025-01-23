@@ -7242,8 +7242,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/3/maps/28/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank3.Route 10.3-28'''
+Image = '''data.maps.banks/10/maps/16/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank10.Celadon City.10-16'''
 
 #################################
 [[TableGroup]]
