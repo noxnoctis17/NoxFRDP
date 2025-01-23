@@ -1701,6 +1701,8 @@ u8 GetMoveTypeSpecialPostAbility(u16 move, u8 atkAbility, bool8 zMoveActive)
 					return TYPE_FLYING;
 				case ABILITY_GALVANIZE:
 					return TYPE_ELECTRIC;
+				case ABILITY_BLAZE:
+					return TYPE_FIRE;
 			}
 		}
 
@@ -1748,6 +1750,7 @@ static bool8 AbilityCanChangeTypeAndBoost(u16 move, u8 atkAbility, u8 electrifyT
 				case ABILITY_PIXILATE:
 				case ABILITY_AERILATE:
 				case ABILITY_GALVANIZE:
+				case ABILITY_BLAZE:
 					return TRUE;
 			}
 		}
@@ -3936,6 +3939,7 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 		case ABILITY_REFRIGERATE:
 		case ABILITY_GALVANIZE:
 		case ABILITY_NORMALIZE:
+		case ABILITY_BLAZE:
 		//1.2x / 1.3x Boost
 			if ((!useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, gNewBS->ElectrifyTimers[bankAtk], (gNewBS->zMoveData.active || gNewBS->zMoveData.viewing)))
 			||   (useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, 0, FALSE)))
