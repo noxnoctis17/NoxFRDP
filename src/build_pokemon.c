@@ -777,7 +777,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 			ZeroEnemyPartyMons();
 
 		//Set up necessary data
-		trainer = GET_TRAINER_PTR(trainerId);
+		// trainer = GET_TRAINER_PTR(trainerId);
+		trainer = &gTrainers[trainerId];
 
 		//Choose Trainer IVs
 		#ifdef VAR_GAME_DIFFICULTY
