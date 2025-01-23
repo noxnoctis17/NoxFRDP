@@ -288,3 +288,18 @@ Purchased
 
 #org @gText_StopZooming
 Stop zooming!
+
+#org @gText_NatureChanger1
+Would you like to change\nyour Pok\emon's nature?
+
+#org @gText_NatureChanger2
+Change to which Nature?
+
+#org @gText_NatureChanger3
+One moment...
+
+#org @gText_NatureChanger4
+There! The Nature was changed.
+
+#org @gText_NoMoney
+You broke bitch...

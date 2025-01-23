@@ -56,6 +56,54 @@ static void sub_80300F4(u8 taskId);
 static u32 GetExpToLevel(u8 toLevel, u8 growthRate);
 static void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies);
 
+///////////////////// LEVEL CAPS BABY //////////////////////
+
+const u16 LevelCaps[] = 
+{
+    20, //Cap Before Badge 1
+    30, //Cap Before Badge 2
+    40, //Cap Before Badge 3
+    50, //Cap Before Badge 4
+    60, //Cap Before Badge 5
+    70, //Cap Before Badge 6
+    80, //Cap Before Badge 7
+    85, //Cap Before Badge 8
+    95, //Cap Before E4
+    100 //Cap After Game Clear
+};
+
+u8 GetCap() {
+    u8 cap = 0;
+    if (FlagGet(FLAG_BADGE01_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE02_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE03_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE04_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE05_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE06_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE07_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_BADGE08_GET)) {
+        cap++;
+    }
+    if (FlagGet(FLAG_SYS_GAME_CLEAR)){ // Defeated Champion Flag
+        cap++;
+    }
+    return cap;
+};
+
 ///////////////////// GAIN EXPERIENCE //////////////////////
 void atk23_getexp(void)
 {
@@ -262,8 +310,13 @@ void atk23_getexp(void)
 		calculatedExp = ExpCalculator(trainerBonus, tradeBonus, baseExp, eggBoost, defLevel, pokeLevel, passPower, affection, evolutionBoost, divisor);
 
 	SKIP_EXP_CALC:
+		// V----PRE LEVEL CAPS
+		// calculatedExp = MathMax(1, calculatedExp);
+		// gBattleMoveDamage = calculatedExp; 
 		calculatedExp = MathMax(1, calculatedExp);
-		gBattleMoveDamage = calculatedExp;
+        u8 cap = LevelCaps[GetCap()];
+        if (pokeLevel >= cap) calculatedExp = 1;
+        gBattleMoveDamage = calculatedExp;
 
 		gBattleScripting.expStateTracker++;
 	__attribute__ ((fallthrough));
